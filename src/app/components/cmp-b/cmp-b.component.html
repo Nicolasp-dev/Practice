@@ -1,0 +1,14 @@
+<h1>Component 2</h1>
+<ng-container *ngIf="message$ | async as message">
+  <div class="">
+    <p>Subject message</p>
+    <p>{{ message }}</p>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="behaviorSubject$ | async as message">
+  <div class="">
+    <p>BehaviorSubject message</p>
+    <p>{{ message }}</p>
+  </div>
+</ng-container>
